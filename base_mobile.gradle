@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {}
+        debug {}
+    }
+
+    buildTypes {
+        debug {
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+    }
+}

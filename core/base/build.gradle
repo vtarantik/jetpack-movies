@@ -1,0 +1,75 @@
+apply from: "${project.rootDir}/common-lib.gradle"
+android {
+    namespace 'com.tarantik.core.base'
+
+    defaultConfig {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file("local.properties").newDataInputStream())
+
+        buildConfigField "String", "API_KEY", "\"${properties.getProperty("MOVIES_API_KEY")}\""
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+//    api project(':core:network')
+
+    // Kotlin
+    api project_deps.kotlin.std
+    api project_deps.kotlin.coroutines
+
+    // Material design
+    api project_deps.material_design
+
+    // Android X
+    api project_deps.androidx.appcompat
+    api project_deps.androidx.splashscreen
+    api project_deps.androidx.datastore
+    api project_deps.androidx.lifecycle_process
+
+    // KTX
+    api project_deps.androidx.ktx.core
+    api project_deps.androidx.ktx.activity
+    api project_deps.androidx.ktx.fragment
+    api project_deps.androidx.ktx.collection
+    api project_deps.androidx.ktx.lifecycle_runtime
+
+    // Compose
+    api project_deps.androidx.compose.compiler
+    api project_deps.androidx.compose.ui
+    debugApi project_deps.androidx.compose.ui_tooling
+    api project_deps.androidx.compose.ui_tooling_preview
+    debugApi project_deps.androidx.compose.ui_pooling_container
+    // Fixes bug with preview (https://issuetracker.google.com/issues/227767363)
+    api project_deps.androidx.compose.foundation
+    api project_deps.androidx.compose.material3
+    api project_deps.androidx.compose.material2
+    // Just because of BottomSheet, it's not available in Mat3:(
+    api project_deps.androidx.compose.animation
+    api project_deps.androidx.compose.activity
+    api project_deps.androidx.compose.navigation
+    api project_deps.androidx.compose.hilt_navigation
+    api project_deps.androidx.compose.runtime_livedata
+    api project_deps.androidx.compose.util
+    api project_deps.androidx.compose.lifecycle_runtime
+    api project_deps.androidx.compose.constraint_layout
+
+    // Accompanist
+    api project_deps.accompanist.systemuicontroller
+    api project_deps.accompanist.navigation_material
+    api project_deps.accompanist.placeholder
+    api project_deps.accompanist.permissions
+
+    // Logging
+    api project_deps.timber
+
+    // Moshi (JSON parser)
+    api project_deps.network.moshi
+    api project_deps.network.moshi_adapters
+
+    api testing_deps.showkase
+
+}

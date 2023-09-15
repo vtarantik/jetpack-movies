@@ -1,0 +1,16 @@
+apply from: "${project.rootDir}/common-lib.gradle"
+android {
+    namespace 'com.tarantik.core.network'
+}
+
+dependencies {
+    implementation project(':core:base')
+
+    api project_deps.coil.compose
+
+    api project_deps.network.retrofit
+    api project_deps.network.retrofit_moshi_converter
+
+    api project_deps.network.okhttp
+    api project_deps.network.okhttp_logging_interceptor
+}

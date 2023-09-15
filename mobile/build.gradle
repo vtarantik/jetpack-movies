@@ -1,0 +1,59 @@
+apply from: "${project.rootDir}/base_mobile.gradle"
+apply from: "${project.rootDir}/common.gradle"
+
+def today = new Date().format('yyyyMMdd')
+def appVersionName = "git describe --tags --abbrev=0".execute().text.trim()
+def appVersionCode = "git tag --list".execute().text.split("\n").size()
+
+android {
+    namespace 'com.tarantik.jetpackmovies'
+
+    defaultConfig {
+        applicationId 'com.tarantik.jetpackmovies'
+
+        versionCode appVersionCode
+        versionName appVersionName
+
+        buildConfigField "int", "VERSION_CODE", "${appVersionCode}"
+        buildConfigField "String", "VERSION_NAME", "\"${appVersionName}\""
+
+        // Replaced with specific flavor
+        resValue "string", "app_name", "Jetpack Movies"
+
+        setProperty("archivesBaseName", "JM-${appVersionName}-${appVersionCode}-${today}")
+    }
+
+    productFlavors {
+        // env
+        develop {
+            dimension = "env"
+            applicationIdSuffix ".develop"
+            resValue "string", "app_name", "JM - D"
+        }
+
+        staging {
+            dimension = "env"
+            applicationIdSuffix ".staging"
+            resValue "string", "app_name", "JM - S"
+        }
+
+        production {
+            dimension = "env"
+            resValue "string", "app_name", "Jetpack Movies"
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+    implementation project(':core:base')
+    implementation project(':core:network')
+    implementation project(':data:movies')
+    implementation project(':domain:movies')
+    implementation project(':feature:movieslist')
+    // LeakCanary, present only in debug builds.
+    debugImplementation project_deps.leakcanary
+}

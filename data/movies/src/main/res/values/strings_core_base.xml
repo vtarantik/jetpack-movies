@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global strings -->
+    <string name="sample">Sample text</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="verifying_location">Verifying location…</string>
+    <string name="view">View</string>
+    <string name="verify_now">Verify now</string>
+    <string name="try_again">Try again</string>
+    <string name="close">Close</string>
+    <string name="open_settings">Open settings</string>
+    <string name="reset">Reset</string>
+    <string name="retry">Retry</string>
+    <string name="text_continue">Continue</string>
+    <string name="remove">Remove</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="go_back">Go back</string>
+    <string name="yes_save">Yes, save</string>
+    <string name="address">Address</string>
+    <string name="address_optional">Apt / Unit / Suite / etc. (optional)</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="country">Country</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="locks_date">Locks: %1$s</string>
+
+    <!-- Main navigation -->
+    <string name="nav_my_contests">My Contests</string>
+    <string name="nav_my_hub">My Hub</string>
+    <string name="nav_account">Account</string>
+
+    <!-- Form validation -->
+    <string name="form_error_invalid_password_character">Password contains not allowed characters</string>
+    <string name="form_error_invalid_password_special_character">Missing at least one special character</string>
+    <string name="form_error_invalid_username_characters">Username contains not allowed characters</string>
+    <string name="form_error_invalid_username_start">Username cannot start with special characters</string>
+    <string name="form_error_invalid_username_end">Username cannot end with special characters</string>
+    <string name="form_error_invalid_username_consecutive_special_chars">Username cannot contain consecutive special characters</string>
+    <string name="form_error_invalid_date">Invalid date</string>
+    <string name="form_error_invalid_zip">Invalid ZIP format</string>
+    <string name="form_error_invalid_state">Invalid format</string>
+    <string name="form_error_not_a_number">Not a number</string>
+    <string name="form_error_invalid_card_number">Invalid credit card number</string>
+    <string name="form_error_invalid_phone_format">Invalid format. Hint: +1234567890</string>
+
+    <!-- Account errors -->
+    <string name="account_required">Account required</string>
+    <string name="account_sign_up">Sign up</string>
+    <string name="account_log_in">Log in</string>
+
+    <!-- Account errors -->
+    <string name="account_error_location_invalid">Location not valid</string>
+    <string name="account_error_location_permission_required">Location permission required</string>
+    <string name="account_error_location_services_required">Location services required</string>
+    <string name="account_error_location_failed">Location error</string>
+    <string name="account_error_under_age">Below the minimum age limit</string>
+    <string name="account_error_not_verified">Account not verified</string>
+
+    <!-- Account warnings -->
+    <string name="account_warning_docv_in_progress">Verifying documents</string>
+
+    <!-- Preview -->
+    <string name="preview_title">Preview title</string>
+    <string name="preview_message">Preview message</string>
+    <string name="preview_action">Action</string>
+
+    <!-- Global content descriptions -->
+    <string name="content_description_back">Back</string>
+    <string name="content_description_close">Close</string>
+    <string name="content_description_show_password">Show password</string>
+    <string name="content_description_hide_password">Hide password</string>
+    <string name="content_description_user_avatar">User avatar</string>
+    <string name="content_description_sport_avatar">Sport avatar</string>
+    <string name="content_description_avatar">Avatar</string>
+    <string name="content_description_team_logo">Team logo</string>
+    <string name="content_description_filter">Filter</string>
+    <string name="content_description_warning">Warning</string>
+    <string name="content_description_selected">Selected</string>
+    <string name="content_description_share">Share</string>
+    <string name="content_description_menu">Menu</string>
+    <string name="content_description_drag_handle">Drag handle</string>
+    <string name="content_description_delete">Delete</string>
+
+    <string name="contest_type_player_tier">Tiers</string>
+    <string name="contest_type_player_category">Category</string>
+    <string name="contest_type_team_survivor">Survivor</string>
+    <string name="contest_type_team_pick_x">Pick X</string>
+
+</resources>

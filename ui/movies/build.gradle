@@ -1,0 +1,14 @@
+apply from: "${project.rootDir}/common-lib.gradle"
+android {
+    namespace 'com.tarantik.jetpackmovies.ui.movieslist'
+
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+    implementation project(':core:base')
+
+    implementation project(':domain:movies')
+}

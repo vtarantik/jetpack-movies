@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--  https://developer.android.com/reference/kotlin/androidx/core/splashscreen/SplashScreen#specs  -->
+    <style name="Theme.JetpackMovies.SplashScreen"
+        parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_splash_screen</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_screen</item>
+        <item name="postSplashScreenTheme">@style/Theme.JetpackMovies</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/bg_navigation_bar</item>
+        <item name="android:navigationBarDividerColor"
+            tools:targetApi="o_mr1">@color/bg_navigation_bar
+        </item>
+        <item name="android:windowLightNavigationBar"
+            tools:targetApi="o_mr1">false
+        </item>
+    </style>
+
+</resources>

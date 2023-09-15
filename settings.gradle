@@ -1,0 +1,8 @@
+rootProject.name = "JetpackMovies"
+include ':mobile',
+        'core:base',
+        'core:network',
+        'data:movies',
+        'domain:movies',
+        'ui:movies',
+        'feature:movieslist'

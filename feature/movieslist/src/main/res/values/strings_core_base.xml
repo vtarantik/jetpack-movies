@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global strings -->
+
+    <!-- Main navigation -->
+    <string name="nav_my_contests">Popular Movies</string>
+    <string name="nav_my_hub">Top Rated Movies</string>
+    <string name="nav_account">Account</string>
+
+    <!-- Form validation -->
+
+    <!-- Preview -->
+    <string name="preview_title">Preview title</string>
+    <string name="preview_message">Preview message</string>
+    <string name="preview_action">Action</string>
+
+    <!-- Global content descriptions -->
+
+</resources>
