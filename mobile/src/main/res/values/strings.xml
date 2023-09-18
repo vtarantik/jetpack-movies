@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">JetpackMovies</string>
+    <string name="movies">movies</string>
+    <string name="account">account</string>
 </resources>

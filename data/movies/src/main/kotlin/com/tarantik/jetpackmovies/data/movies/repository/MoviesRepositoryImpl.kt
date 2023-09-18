@@ -12,6 +12,6 @@ import javax.inject.Inject
 class MoviesRepositoryImpl @Inject constructor(
     private val moviesApi: MoviesApi,
 ) : MoviesRepository {
-    override suspend fun listPopularMovies(): Result<List<MovieModel>> = moviesApi.listPopularMovies().map { it.map { it.toModel() } }
+    override suspend fun listPopularMovies(): Result<List<MovieModel>> = moviesApi.listPopularMovies().map { it.results.map { it.toModel() } }
     override suspend fun getMovieDetail(id: Int): Result<MovieDetailModel> = moviesApi.getMovieDetail(id).map { it.toModel() }
 }

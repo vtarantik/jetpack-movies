@@ -1,9 +1,11 @@
 package com.tarantik.core.network.di
 
+import android.app.Application
 import com.tarantik.core.network.retrofit.adapter.ResultCallAdapterFactory
 import com.tarantik.core.network.retrofit.interceptor.LoggingInterceptor
 import com.squareup.moshi.Moshi
 import com.tarantik.core.base.BuildConfig
+import com.tarantik.core.network.NetworkContract
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,6 +22,9 @@ import java.util.concurrent.TimeUnit
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
+    @Provides
+    fun provideNetworkContract(application: Application): NetworkContract = application as NetworkContract
+
     @Provides
     @Singleton
     fun provideLoggingInterceptor(): HttpLoggingInterceptor = LoggingInterceptor.provide()

@@ -1,6 +1,7 @@
 package com.tarantik.jetpackmovies.data.movies.model
 
 import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 import com.tarantik.jetpackmovies.domain.movies.model.CollectionModel
 import com.tarantik.jetpackmovies.domain.movies.model.GenreModel
 import com.tarantik.jetpackmovies.domain.movies.model.MovieDetailModel
@@ -9,6 +10,7 @@ import com.tarantik.jetpackmovies.domain.movies.model.ProductionCompanyModel
 import com.tarantik.jetpackmovies.domain.movies.model.ProductionCountryModel
 import com.tarantik.jetpackmovies.domain.movies.model.SpokenLanguageModel
 
+@JsonClass(generateAdapter = true)
 data class MovieDTO(
     val id: Int,
     @Json(name = "poster_path")

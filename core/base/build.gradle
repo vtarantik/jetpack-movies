@@ -69,6 +69,7 @@ dependencies {
     // Moshi (JSON parser)
     api project_deps.network.moshi
     api project_deps.network.moshi_adapters
+    api project_deps.network.moshi_kotlin
 
     api testing_deps.showkase
 

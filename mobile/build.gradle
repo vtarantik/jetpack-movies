@@ -53,6 +53,7 @@ dependencies {
     implementation project(':core:network')
     implementation project(':data:movies')
     implementation project(':domain:movies')
+    implementation project(':ui:movies')
     implementation project(':feature:movieslist')
     // LeakCanary, present only in debug builds.
     debugImplementation project_deps.leakcanary

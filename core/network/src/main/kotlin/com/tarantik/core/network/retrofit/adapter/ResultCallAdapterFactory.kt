@@ -1,6 +1,7 @@
 package com.tarantik.core.network.retrofit.adapter
 
 import com.squareup.moshi.Moshi
+import com.tarantik.core.base.arch.Result
 import com.tarantik.core.network.NetworkContract
 import java.lang.reflect.ParameterizedType
 import java.lang.reflect.Type

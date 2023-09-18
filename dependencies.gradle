@@ -6,7 +6,7 @@ ext {
     ]
 
     gradle_plugin_versions = [
-            android                  : '8.3.0-alpha01',
+            android                  : '8.3.0-alpha04',
             kotlin                   : '1.9.10',
             versions                 : '0.47.0',
             ktlint                   : '11.5.1',
@@ -156,6 +156,7 @@ ext {
                     okhttp_logging_interceptor: "com.squareup.okhttp3:logging-interceptor:${project_versions.okhttp}",
                     moshi                     : "com.squareup.moshi:moshi:${project_versions.moshi}",
                     moshi_kotlin_codegen      : "com.squareup.moshi:moshi-kotlin-codegen:${project_versions.moshi}",
+                    moshi_kotlin              : "com.squareup.moshi:moshi-kotlin:${project_versions.moshi}",
                     moshi_adapters            : "com.squareup.moshi:moshi-adapters:${project_versions.moshi}"
             ],
 
