@@ -19,38 +19,18 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.tarantik.core.base.arch.BaseActivity
+import com.tarantik.jetpackmovies.movieslist.ui.screen.movieslist.MoviesListScreen
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity() {
     override val content: @Composable () -> Unit = {
-        val screenWidth = LocalConfiguration.current.screenWidthDp.dp
-        val density = LocalDensity.current
-        var textWidth = 0.dp
-//        Box(
-//            modifier = Modifier
-//                .background(Color.Magenta)
-//                .size(100.dp)
-//                .wrapContentSize()
-//                .size(50.dp)
-//                .fillMaxSize()
-//                .size(20.dp)
-//                .onGloballyPositioned {
-//                    Timber.d("${with(density){it.size.width.}}")
-//                }
-//        ) {
-//
-//        }
-        Text(
-            text = "HELLO",
-            modifier = Modifier
-                .background(Color.Magenta)
-                .padding(16.dp)
-                .background(Color.Blue)
-                .padding(48.dp)
-        )
+        Box {
+            MoviesListScreen(hiltViewModel())
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
