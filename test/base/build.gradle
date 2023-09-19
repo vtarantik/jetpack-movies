@@ -1,0 +1,18 @@
+apply from: "${project.rootDir}/common-lib.gradle"
+
+android {
+    namespace 'com.tarantik.test.base'
+
+    packagingOptions {
+        exclude("META-INF/LICENSE.md")
+        exclude("META-INF/LICENSE-notice.md")
+        exclude("META-INF/*.kotlin_module")
+    }
+}
+
+dependencies {
+    api project(':core:test')
+
+    implementation testing_deps.mockk
+
+}

@@ -1,0 +1,19 @@
+apply from: "${project.rootDir}/common-lib.gradle"
+apply plugin: 'app.cash.paparazzi'
+
+android {
+    namespace 'com.tarantik.test.screenshot'
+}
+
+dependencies {
+    implementation project(':core:base')
+    implementation project(':core:network')
+
+    implementation project(':feature:movieslist')
+
+    testImplementation project(':test:base')
+
+    testImplementation testing_deps.test_parameter_injector
+    kaptTest testing_deps.showkase_processor
+}
+
