@@ -109,9 +109,9 @@ android {
             useJUnit {
                 // gradlew -PtestCategory=screenshots ....
                 if (project.hasProperty('testCategory') && testCategory == "screenshots") {
-                    includeCategories 'com.tarantik.test.ScreenshotTest'
+                    includeCategories 'com.tarantik.core.test.ScreenshotTest'
                 } else {
-                    excludeCategories 'com.tarantik.test.ScreenshotTest'
+                    excludeCategories 'com.tarantik.core.test.ScreenshotTest'
                 }
             }
         }

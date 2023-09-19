@@ -35,14 +35,18 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     private fun setupScreen() {
-        setContent {
-            JetpackMoviesTheme {
-                ActivityScreen(
-                    backgroundColor = JetpackMoviesTheme.colors.surface.primary,
-                    contentColor = JetpackMoviesTheme.colors.onSurface.primary,
+            setContent {
+                CompositionLocalProvider(
+                    LocalActivity provides this,
                 ) {
-                    Box {
-                        content()
+                JetpackMoviesTheme {
+                    ActivityScreen(
+                        backgroundColor = JetpackMoviesTheme.colors.surface.primary,
+                        contentColor = JetpackMoviesTheme.colors.onSurface.primary,
+                    ) {
+                        Box {
+                            content()
+                        }
                     }
                 }
             }
@@ -57,4 +61,8 @@ abstract class BaseActivity : AppCompatActivity() {
             ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         }
     }
+}
+
+val LocalActivity: ProvidableCompositionLocal<BaseActivity> = staticCompositionLocalOf {
+    noLocalProviderFor("LocalActivity")
 }

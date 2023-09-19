@@ -100,37 +100,37 @@ val LightInverseOnSurface = Color(0xFFFBEEEA)
 
 // Dark Theme
 @ShowkaseColor(group = "Base")
-val DarkError = Color(0xffba1a1a)
+val DarkError = Color(0xFFFFB4AB)
 
 @ShowkaseColor(group = "Brand")
-val DarkPrimary = Color(0xFF99461e)
+val DarkPrimary = Color(0xFFFFB597)
 
 @ShowkaseColor(group = "Brand")
-val DarkSecondary = Color(0xFF6251a6)
+val DarkSecondary = Color(0xFFCBBEFF)
 
 @ShowkaseColor(group = "Brand")
-val DarkTertiary = Color(0xFF00639c)
+val DarkTertiary = Color(0xFF97CBFF)
 
 @ShowkaseColor(group = "Brand")
 val DarkInversePrimary = Color(0xFF99461E)
 
 @ShowkaseColor(group = "Brand")
-val DarkBackground = Color(0xFFfffbff)
+val DarkBackground = Color(0xFF201A18)
 
 @ShowkaseColor(group = "Base")
-val DarkOnError = Color(0xffffffff)
+val DarkOnError = Color(0xFF690005)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnPrimary = Color(0xFF99461e)
+val DarkOnPrimary = Color(0xFF591D00)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnSecondary = Color(0xFF6251a6)
+val DarkOnSecondary = Color(0xFF332074)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnTertiary = Color(0xFF00639c)
+val DarkOnTertiary = Color(0xFF003354)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnBackground = Color(0xFF201a18)
+val DarkOnBackground = Color(0xFFEDE0DC)
 
 @ShowkaseColor(group = "Brand")
 val DarkOutline = Color(0xFFA08D86)
@@ -142,43 +142,43 @@ val DarkOutlineVariant = Color(0xFF53433E)
 val DarkScrim = Color(0xFF000000)
 
 @ShowkaseColor(group = "Base")
-val DarkErrorContainer = Color(0xffffdbcd)
+val DarkErrorContainer = Color(0xFF93000A)
 
 @ShowkaseColor(group = "Brand")
-val DarkPrimaryContainer = Color(0xFFffdbcd)
+val DarkPrimaryContainer = Color(0xFF7B2F08)
 
 @ShowkaseColor(group = "Brand")
-val DarkSecondaryContainer = Color(0xFFe6deff)
+val DarkSecondaryContainer = Color(0xFF4A398C)
 
 @ShowkaseColor(group = "Brand")
-val DarkTertiaryContainer = Color(0xFFcee5ff)
+val DarkTertiaryContainer = Color(0xFF004A77)
 
 @ShowkaseColor(group = "Brand")
-val DarkSurface = Color(0xFFfffbff)
+val DarkSurface = Color(0xFF201A18)
 
 @ShowkaseColor(group = "Brand")
-val DarkSurfaceVariant = Color(0xFFf5ded6)
+val DarkSurfaceVariant = Color(0xFF53433E)
 
 @ShowkaseColor(group = "Base")
-val DarkOnErrorContainer = Color(0xff410002)
+val DarkOnErrorContainer = Color(0xFFFFDAD6)
 
 @ShowkaseColor(group = "Base")
 val DarkInverseSurface = Color(0xFFEDE0DC)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnPrimaryContainer = Color(0xFF360f00)
+val DarkOnPrimaryContainer = Color(0xFF7B2F08)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnSecondaryContainer = Color(0xFF1d0160)
+val DarkOnSecondaryContainer = Color(0xFFE6DEFF)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnTertiaryContainer = Color(0xFF001d33)
+val DarkOnTertiaryContainer = Color(0xFFCEE5FF)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnSurface = Color(0xFF201a18)
+val DarkOnSurface = Color(0xFFEDE0DC)
 
 @ShowkaseColor(group = "Brand")
-val DarkOnSurfaceVariant = Color(0xFF53433e)
+val DarkOnSurfaceVariant = Color(0xFFD8C2BA)
 
 @ShowkaseColor(group = "Brand")
 val DarkInverseOnSurface = Color(0xFF201A18)

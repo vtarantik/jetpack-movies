@@ -2,7 +2,11 @@ rootProject.name = "JetpackMovies"
 include ':mobile',
         'core:base',
         'core:network',
+        'core:test',
         'data:movies',
         'domain:movies',
         'ui:movies',
-        'feature:movieslist'
+        'feature:movieslist',
+        ':test:base',
+        ':test:screenshot'
+

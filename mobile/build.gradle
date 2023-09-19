@@ -55,6 +55,7 @@ dependencies {
     implementation project(':domain:movies')
     implementation project(':ui:movies')
     implementation project(':feature:movieslist')
+    implementation project(':test:screenshot')
     // LeakCanary, present only in debug builds.
     debugImplementation project_deps.leakcanary
 }

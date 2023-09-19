@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/base" />
             <option value="$PROJECT_DIR$/core/network" />
+            <option value="$PROJECT_DIR$/core/test" />
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/data/movies" />
             <option value="$PROJECT_DIR$/domain" />
@@ -19,6 +20,9 @@
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/feature/movieslist" />
             <option value="$PROJECT_DIR$/mobile" />
+            <option value="$PROJECT_DIR$/test" />
+            <option value="$PROJECT_DIR$/test/base" />
+            <option value="$PROJECT_DIR$/test/screenshot" />
             <option value="$PROJECT_DIR$/ui" />
             <option value="$PROJECT_DIR$/ui/movies" />
           </set>
