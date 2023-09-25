@@ -22,8 +22,6 @@ class MoviesListViewModel @Inject constructor(
         loadData()
     }
 
-    suspend fun loadMovies() = listMoviesUseCase.execute()
-
     private fun loadData() {
         launch {
             listMoviesUseCase.execute()
